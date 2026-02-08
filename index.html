@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vintage Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>The Vintage Web</h1>
+  <p>Internet that has aged like fine wine.</p>
+  <button id="go">Take me somewhere</button>
+  <script src="sites.js"></script>
+  <script>
+    document.getElementById('go').addEventListener('click', function() {
+      var site = sites[Math.floor(Math.random() * sites.length)];
+      window.open(site, '_blank');
+    });
+  </script>
+</body>
+</html>
