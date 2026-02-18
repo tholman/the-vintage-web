@@ -4,7 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Vintage Web</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Georgia, serif;
+      background: #f5f0e8;
+      color: #333;
+    }
+    h1 { font-size: 3rem; margin-bottom: 0.25rem; }
+    p { font-size: 1.2rem; margin-bottom: 2rem; color: #666; }
+    button {
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      padding: 0.75rem 2rem;
+      background: #333;
+      color: #f5f0e8;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover { background: #555; }
+  </style>
 </head>
 <body>
   <h1>The Vintage Web</h1>
@@ -12,8 +37,19 @@
   <button id="go">Take me somewhere</button>
   <script src="sites.js"></script>
   <script>
+    var BUFFER_SIZE = 10;
+    var next = BUFFER_SIZE;
+    var buffer = sites.slice(0, BUFFER_SIZE);
+
     document.getElementById('go').addEventListener('click', function() {
-      var site = sites[Math.floor(Math.random() * sites.length)];
+      if (buffer.length === 0) return;
+      var i = Math.floor(Math.random() * buffer.length);
+      var site = buffer[i];
+      buffer.splice(i, 1);
+      if (next < sites.length) {
+        buffer.push(sites[next]);
+        next++;
+      }
       window.open(site, '_blank');
     });
   </script>
