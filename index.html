@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Vintage Web</title>
+  <meta name="ppl looking in here" content="Yeah I'm aware its a little ironic ive've used some newer browser tech, forgive me please" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,6 +24,7 @@
       color: #f5f0e8;
       padding: 0.4rem 0;
       font-size: 0.8rem;
+      font-family: cursive;
     }
     .top { top: 0; }
     .bottom { bottom: 0; }
@@ -33,7 +35,6 @@
       text-transform: uppercase;
       margin-bottom: 1.5rem;
     }
-    h1 span { font-size: 1.5rem; }
     p {
       font-size: 0.9rem;
       margin-top: 2rem;
@@ -41,23 +42,38 @@
       letter-spacing: 0.1em;
     }
     button {
-      font-family: monospace;
       font-size: 1.5rem;
       padding: 0.6rem 1.8rem;
       background: #333;
       color: #f5f0e8;
       border: none;
       cursor: pointer;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-family: cursive;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .cursive { font-family: cursive; }
+    .to-a {
+      font-size: 1.5rem;
+    }
+    .button-line {
+      font-family: cursive;
+      font-size: 2.4rem;
+      display: flex;
+      line-height: 0;
+      align-items: center;
     }
     button:hover { background: #555; }
   </style>
 </head>
 <body>
-  <marquee class="top">~ Welcome to The Vintage Web ~ The internet used to be fun ~ Remember when websites had soul? ~ You are visitor number 1,000,000 ~</marquee>
-  <h1>take me<br><span>to a</span><br>vintage<br>website</h1>
-  <button id="go">&#9758; please &#9756;</button>
-  <p>internet that has aged like fine wine</p>
-  <marquee class="bottom" direction="right">~ Best viewed in Netscape Navigator ~ 800x600 resolution recommended ~ Sign our guestbook! ~ Under construction forever ~</marquee>
+  <marquee class="top">- Welcome to The Vintage Web - You are visitor number 1,000,000 -</marquee>
+  <h1>take me<div class="to-a">to a</div><div class="vintage">vintage</div>website</h1>
+  <div class="button-line">&#9758;<button id="go"> please </button>&#9756;</div>
+  <p class="cursive">websites aged like fine wine</p>
+  <marquee class="bottom" direction="right">- Best viewed in Netscape Navigator - 800x600 resolution recommended - Sign our guestbook! - Under construction forever </marquee>
   <script src="sites.js"></script>
   <script>
     var BUFFER_SIZE = 10;
