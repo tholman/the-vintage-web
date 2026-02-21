@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Vintage Web</title>
+  <meta name="description" content="The internet used to be fun. Discover vintage websites aged like fine wine.">
+  <meta name="theme-color" content="#333">
+  <meta property="og:title" content="The Vintage Web">
+  <meta property="og:description" content="Websites aged like fine wine.">
   <meta name="ppl looking in here" content="Yeah I'm aware its a little ironic ive've used some newer browser tech, forgive me please" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,7 +35,7 @@
     .bottom { bottom: 0; }
     marquee a { color: #f5f0e8; }
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       line-height: 1.3;
       text-align: center;
       text-transform: uppercase;
@@ -44,7 +48,7 @@
       letter-spacing: 0.1em;
     }
     button {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 0.6rem 1.8rem;
       background: #333;
       color: #f5f0e8;
@@ -58,11 +62,11 @@
     }
     .cursive { font-family: cursive; }
     .to-a {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
     .button-line {
       font-family: cursive;
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       display: flex;
       line-height: 0;
       align-items: center;
@@ -84,14 +88,21 @@
       from { transform: rotateX(360deg); }
       to { transform: rotateX(0deg); }
     }
+    @media (max-width: 500px) {
+      h1 { font-size: 2.2rem; }
+      .to-a { font-size: 1.2rem; }
+      .button-line { font-size: 2rem; }
+      button { font-size: 1.3rem; padding: 0.5rem 1.2rem; }
+      p { font-size: 0.8rem; }
+    }
   </style>
 </head>
 <body>
-  <marquee class="top">Welcome to The Vintage Web &nbsp; - &nbsp; You are visitor number 1,000,000 &nbsp; - &nbsp; Last updated: January 1st, 1999 &nbsp; - &nbsp; NEW! &nbsp; - &nbsp; Cool links added weekly</marquee>
+  <marquee class="top">Welcome to The Vintage Web &nbsp; - &nbsp; You are visitor number 652 &nbsp; - &nbsp; By <a href="https://tholman.com">Tim Holman</a> &nbsp; - &nbsp; Sister site to <a href="https://theuselessweb.com/">The Useless Web</a> &nbsp; - &nbsp; Last updated: January 1st, 1999 &nbsp; - &nbsp; NEW! &nbsp; - &nbsp; Cool links added weekly &nbsp; - &nbsp; Optimized for 56k modems &nbsp; - &nbsp; This site is Geocities approved</marquee>
   <h1>take me<div class="to-a">to a</div><div class="vintage">vintage</div>website</h1>
   <div class="button-line"><span class="hand hand-left">&#9758;</span><button id="go"> please </button><span class="hand hand-right">&#9756;</span></div>
   <p class="cursive">websites aged like fine wine</p>
-  <marquee class="bottom" direction="right">Sister site to <a href="https://theuselessweb.com/">The Useless Web</a> &nbsp; - &nbsp; By <a href="https://tholman.com">Tim Holman</a> &nbsp; - &nbsp; Best viewed in Netscape Navigator &nbsp; - &nbsp; 800x600 resolution recommended &nbsp; - &nbsp; Sign our guestbook! &nbsp; - &nbsp; Under construction forever &nbsp; - &nbsp; This page is Y2K compliant &nbsp; - &nbsp; Made with Notepad &nbsp; - &nbsp; No frames required &nbsp; - &nbsp; Webmaster certified</marquee>
+  <marquee class="bottom" direction="right">Best viewed in Netscape Navigator &nbsp; - &nbsp; 800x600 resolution recommended &nbsp; - &nbsp; Sign our guestbook! &nbsp; - &nbsp; Under construction forever &nbsp; - &nbsp; This page is Y2K compliant &nbsp; - &nbsp; Made with Notepad &nbsp; - &nbsp; No frames required &nbsp; - &nbsp; Webmaster certified &nbsp; - &nbsp; <a href="https://tholman.com">tholman.com</a> &nbsp; - &nbsp; <a href="https://theuselessweb.com/">theuselessweb.com</a> &nbsp; - &nbsp; Member of the Web Ring &nbsp; - &nbsp; Java-free zone &nbsp; - &nbsp; Blink tag enthusiast</marquee>
   <script src="sites.js"></script>
   <script>
     var BUFFER_SIZE = 10;
