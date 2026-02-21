@@ -25,9 +25,11 @@
       padding: 0.4rem 0;
       font-size: 0.8rem;
       font-family: cursive;
+      letter-spacing: 0.1em;
     }
     .top { top: 0; }
     .bottom { bottom: 0; }
+    marquee a { color: #f5f0e8; }
     h1 {
       font-size: 2.5rem;
       line-height: 1.3;
@@ -64,16 +66,32 @@
       display: flex;
       line-height: 0;
       align-items: center;
+      perspective: 200px;
     }
     button:hover { background: #555; }
+    .hand {
+      display: inline-block;
+      animation: 8s linear infinite;
+      transform-style: preserve-3d;
+    }
+    .hand-left { transform-origin: right center; animation-name: point-left; }
+    .hand-right { transform-origin: left center; animation-name: point-right; animation-delay: -4s; }
+    @keyframes point-left {
+      from { transform: rotateX(0deg); }
+      to { transform: rotateX(360deg); }
+    }
+    @keyframes point-right {
+      from { transform: rotateX(360deg); }
+      to { transform: rotateX(0deg); }
+    }
   </style>
 </head>
 <body>
-  <marquee class="top">- Welcome to The Vintage Web - You are visitor number 1,000,000 -</marquee>
+  <marquee class="top">Welcome to The Vintage Web &nbsp; - &nbsp; You are visitor number 1,000,000 &nbsp; - &nbsp; Last updated: January 1st, 1999 &nbsp; - &nbsp; NEW! &nbsp; - &nbsp; Cool links added weekly</marquee>
   <h1>take me<div class="to-a">to a</div><div class="vintage">vintage</div>website</h1>
-  <div class="button-line">&#9758;<button id="go"> please </button>&#9756;</div>
+  <div class="button-line"><span class="hand hand-left">&#9758;</span><button id="go"> please </button><span class="hand hand-right">&#9756;</span></div>
   <p class="cursive">websites aged like fine wine</p>
-  <marquee class="bottom" direction="right">- Best viewed in Netscape Navigator - 800x600 resolution recommended - Sign our guestbook! - Under construction forever </marquee>
+  <marquee class="bottom" direction="right">Sister site to <a href="https://theuselessweb.com/">The Useless Web</a> &nbsp; - &nbsp; By <a href="https://tholman.com">Tim Holman</a> &nbsp; - &nbsp; Best viewed in Netscape Navigator &nbsp; - &nbsp; 800x600 resolution recommended &nbsp; - &nbsp; Sign our guestbook! &nbsp; - &nbsp; Under construction forever &nbsp; - &nbsp; This page is Y2K compliant &nbsp; - &nbsp; Made with Notepad &nbsp; - &nbsp; No frames required &nbsp; - &nbsp; Webmaster certified</marquee>
   <script src="sites.js"></script>
   <script>
     var BUFFER_SIZE = 10;

@@ -41,4 +41,5 @@ var sites = [
   "https://www.koalastothemax.com/",
   "https://therentparty.com/",
   "https://www.berkshirehathaway.com/",
+  "https://milk.com/wall-o-shame/",
 ];
