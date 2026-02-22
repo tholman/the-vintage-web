@@ -18,8 +18,67 @@
       justify-content: center;
       height: 100vh;
       font-family: monospace;
-      background: #f5f0e8;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 14px,
+          rgba(139,105,20,0.03) 14px,
+          rgba(139,105,20,0.03) 15px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 14px,
+          rgba(139,105,20,0.03) 14px,
+          rgba(139,105,20,0.03) 15px
+        ),
+        #ece5d5;
       color: #333;
+    }
+    .frame {
+      position: relative;
+      background: #faf6ee;
+      padding: 2.5rem 3rem;
+      border: 12px ridge #8B6914;
+      outline: 4px solid #5a3a10;
+      outline-offset: 0px;
+      box-shadow:
+        inset 0 0 15px rgba(107,66,38,0.25),
+        inset 0 0 4px rgba(139,105,20,0.3),
+        4px 4px 12px rgba(0,0,0,0.35),
+        1px 1px 3px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .frame::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #888;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+    .frame::after {
+      content: '';
+      position: absolute;
+      top: -26px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-top: 0;
+      filter: drop-shadow(0 0 0 transparent);
+      background: none;
+      border-bottom-color: rgba(100,100,100,0.15);
     }
     marquee {
       position: fixed;
@@ -94,14 +153,17 @@
       .button-line { font-size: 2rem; }
       button { font-size: 1.3rem; padding: 0.5rem 1.2rem; }
       p { font-size: 0.8rem; }
+      .frame { padding: 1.5rem 1.2rem; border-width: 8px; }
     }
   </style>
 </head>
 <body>
   <marquee class="top">Welcome to The Vintage Web &nbsp; - &nbsp; You are visitor number 652 &nbsp; - &nbsp; By <a href="https://tholman.com">Tim Holman</a> &nbsp; - &nbsp; Sister site to <a href="https://theuselessweb.com/">The Useless Web</a> &nbsp; - &nbsp; Last updated: January 1st, 1999 &nbsp; - &nbsp; NEW! &nbsp; - &nbsp; Cool links added weekly &nbsp; - &nbsp; Optimized for 56k modems &nbsp; - &nbsp; This site is Geocities approved</marquee>
-  <h1>take me<div class="to-a">to a</div><div class="vintage">vintage</div>website</h1>
-  <div class="button-line"><span class="hand hand-left">&#9758;</span><button id="go"> please </button><span class="hand hand-right">&#9756;</span></div>
-  <p class="cursive">websites aged like fine wine</p>
+  <div class="frame">
+    <h1>take me<div class="to-a">to a</div><div class="vintage">vintage</div>website</h1>
+    <div class="button-line"><span class="hand hand-left">&#9758;</span><button id="go"> please </button><span class="hand hand-right">&#9756;</span></div>
+    <p class="cursive">websites aged like fine wine</p>
+  </div>
   <marquee class="bottom" direction="right">Best viewed in Netscape Navigator &nbsp; - &nbsp; 800x600 resolution recommended &nbsp; - &nbsp; Sign our guestbook! &nbsp; - &nbsp; Under construction forever &nbsp; - &nbsp; This page is Y2K compliant &nbsp; - &nbsp; Made with Notepad &nbsp; - &nbsp; No frames required &nbsp; - &nbsp; Webmaster certified &nbsp; - &nbsp; By <a href="https://tholman.com">Tim Holman</a> &nbsp; - &nbsp; Sister site to <a href="https://theuselessweb.com/">The Useless Web</a> &nbsp; - &nbsp; Member of the Web Ring &nbsp; - &nbsp; Java-free zone &nbsp; - &nbsp; Blink tag enthusiast</marquee>
   <script src="sites.js"></script>
   <script>
