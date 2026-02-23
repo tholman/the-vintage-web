@@ -20,7 +20,6 @@ var sites = [
   "https://artho.com/age/",
   "http://whatislife.com/",
   "https://www.xenomorph.org/",
-  "https://robrobinette.com/T-3A_Firefly.htm",
   
   "http://www.users.zetnet.co.uk/area51/",
   "https://www.trafficsignalmuseum.com/pages/",
