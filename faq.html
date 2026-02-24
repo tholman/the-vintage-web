@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - The Vintage Web</title>
+  <meta name="description" content="Frequently Asked Questions about The Vintage Web.">
+  <meta name="theme-color" content="#333">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: monospace;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 14px,
+          rgba(139,105,20,0.03) 14px,
+          rgba(139,105,20,0.03) 15px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 14px,
+          rgba(139,105,20,0.03) 14px,
+          rgba(139,105,20,0.03) 15px
+        ),
+        #ece5d5;
+      color: #333;
+      padding: 3rem 1rem;
+    }
+    .frame {
+      position: relative;
+      background: #faf6ee;
+      padding: 2.5rem 3rem;
+      border: 12px ridge #8B6914;
+      outline: 4px solid #5a3a10;
+      outline-offset: 0px;
+      box-shadow:
+        inset 0 0 15px rgba(107,66,38,0.25),
+        inset 0 0 4px rgba(139,105,20,0.3),
+        4px 4px 12px rgba(0,0,0,0.35),
+        1px 1px 3px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 100%;
+    }
+    .frame::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background: #888;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      font-family: monospace;
+    }
+    .vintage { color: darkred; }
+    .faq-item {
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    .faq-item .you {
+      font-weight: bold;
+      color: #333;
+    }
+    .faq-item .me {
+      font-weight: bold;
+      color: darkred;
+    }
+    a {
+      color: darkred;
+    }
+    a:hover {
+      color: #555;
+    }
+    hr {
+      border: none;
+      border-top: 1px dashed #c0b89a;
+      margin: 1.5rem 0;
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      font-family: cursive;
+      color: darkred;
+      font-size: 1rem;
+    }
+    @media (max-width: 500px) {
+      h1 { font-size: 1.8rem; }
+      .frame { padding: 1.5rem 1.2rem; border-width: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <h1><span class="vintage">FAQ</span></h1>
+    <div class="faq-item">
+      <p><span class="you">You:</span> ...</p>
+      <p><span class="me">Me:</span> Hey there, it's <a target="_blank" href="https://tholman.com">Tim Holman</a> here... a million (13ish?) years ago I made <a target="_blank" href="https://theuselessweb.com/">The Useless Web</a> out of some love for many of the insane and creative websites that I had found online. Now, as they say, the times are a-changggetting-pretty-weird, and out of some other weird nostalgic hole I started digging up old websites that are still around from the old old days, and thought I'd make a quick sister site to showcase them.</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> Why?</p>
+      <p><span class="me">Me:</span> Well, I just said, but I guess on top of that, while maintaining <a href="https://theuselessweb.com/">The Useless Web</a>, a sad reality that I have experienced on a monthly-ish basis, is that the sites go down, are put up for auction, and quickly snapped up by some spam bot. This woke me in many ways to the reality that there are honestly not that many old relics left running. So why not document a few.</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> Ironic you used newer tech right?</p>
+      <p><span class="me">Me:</span> Yeah, I know. I did keep the marquee elements in there though, and surprisingly they still work.</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> Where'd you build this list?</p>
+      <p><span class="me">Me:</span> Mostly collecting. Sometimes I'm like damn, is this site old or just a modern recreation of an old site?</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> There's so many old sites that have just had redesigns!</p>
+      <p><span class="me">Me:</span> Ya, thats kinda the point. These OG's weathered the test of perpetual-redesign-hell.</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> You know there's others like this in the internet archive</p>
+      <p><span class="me">Me:</span> Ya, honestly it's a better resource to experience those days, I just wanted to document and start to track what is still ALIVE.</p>
+    </div>
+    <hr>
+    <div class="faq-item">
+      <p><span class="you">You:</span> I got one for you, can I submit?</p>
+      <p><span class="me">Me:</span> Send it to my email, which you can find on <a href="https://tholman.com/">my website</a>.</p>
+    </div>
+    <a class="back" href="index.html">&larr; Back to The Vintage Web</a>
+  </div>
+</body>
+</html>
