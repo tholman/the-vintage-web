@@ -11,6 +11,7 @@ var sites = [
   "https://www.fogcam.org/",
   "https://robspuzzlepage.com/jumping.htm",
   "http://www.spelljammer.org/",
+  "https://www.crtsite.com/didactic-crt.html",
   "https://milliondollarhomepage.com/",
   "http://diabellalovescats.com/",
   "https://www.heavensgate.com/",
