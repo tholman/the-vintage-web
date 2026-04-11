@@ -21,6 +21,7 @@ var sites = [
   "https://artho.com/age/",
   "http://whatislife.com/",
   "https://www.xenomorph.org/",
+  "http://www.wideweb.com/phonetrips/",
   
   "http://www.users.zetnet.co.uk/area51/",
   "https://www.trafficsignalmuseum.com/pages/",
