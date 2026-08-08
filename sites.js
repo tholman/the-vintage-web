@@ -7,6 +7,7 @@ var sites = [
   "https://theshadowlands.net/",
   "https://www.coatneyhistory.com/",
   "https://www.myth-and-fantasy.com/index2.html",
+  "https://www.twilightvisions.com/",
   "https://alexkidd.com/",
   "https://www.fogcam.org/",
   "https://robspuzzlepage.com/jumping.htm",
@@ -28,6 +29,7 @@ var sites = [
   "https://www.stardestroyer.net/Empire/Essays/",
   "https://mewbies.com/acute_terminal_fun_telnet_public_servers_watch_star_wars_play_games_etc.htm",
   "http://davidchess.com/words/log.20001124.html",
+  "https://dropd.com/",
   
   "http://www.rocketroberts.com/joe.htm",
   "https://artho.com/warcraft/",
