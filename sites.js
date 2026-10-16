@@ -5,6 +5,7 @@ var sites = [
   "https://www.pmichaud.com/toast/",
   "http://www.textfiles.com/underconstruction/",
   "https://theshadowlands.net/",
+  "https://www.theoldrobots.com/misc10.html",
   "https://www.coatneyhistory.com/",
   "https://www.myth-and-fantasy.com/index2.html",
   "https://www.twilightvisions.com/",
