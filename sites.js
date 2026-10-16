@@ -21,7 +21,7 @@ var sites = [
   "https://puzzleworld.org/PuzzleWorld/",
   "https://xenon.stanford.edu/~geksiong/papers/sts145/Squaresoft%20and%20FF7.htm",
   "https://artho.com/age/",
-  "http://whatislife.com/",
+  // "http://whatislife.com/", // DNS dropped (domain still registered) — check if it comes back
   "https://www.xenomorph.org/",
   "http://www.wideweb.com/phonetrips/",
   
